@@ -1,14 +1,15 @@
 # ADF4351
-##Introduction
+
+## Introduction
 This porject is designed to incorporate Analog Devices ADF 4351 chip with Teensy 3.6. On the bottom right corner, there are two slots reserved for two different TCXO oscillators 535L250X2GT5 and XNCLH25M000THJA0P0. Only one of them should be used. The ADF4351 can be controlled using SPI by the Teensy 3.6 on-board or externally using the header pin when the Teensy is unplugged. The Teensy 3.6 is also powered by this board, so please cut the 5V pad according to https://www.pjrc.com/teensy/external_power.html  before use. The library used to control the ADF4351 chip is mostly based on the code written by David Fannin (dfannin). The register writing part of this code is adapted from the code written by Neal Pisenti (npisenti). The library is still under development, so use it with cautions.
 
-##Hardware
-###TXCO oscillators
+## Hardware
+### TXCO oscillators
 This PCB is designed such that either 535L250X2GT5 or XNCLH25M000THJA0P0 can be used. If oscillator with frequency other than 25MHz, a corresponding modifcation to the SPI control library has to be made.
-###Fast Lock Loop Filter Topology
+### Fast Lock Loop Filter Topology
 In order to increase the lock speed, the board is modified according to page 23 in the ADF4351 manual.(a 0 Ohm on R% and replace r4 with a 1k Ohm resistor). The SPI control library in this repository is also adapted to work under the fast lock.
 
-###Teensy 3.6
+### Teensy 3.6
 The Teensy 3.6 is designed to be directly power by the board, so please cut the 5V pad according to https://www.pjrc.com/teensy/external_power.html  before use.
 
 ## Software
