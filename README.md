@@ -24,4 +24,4 @@ I modidified the code to enable the fast lock functionality and calculate the di
 + [Big Number Arduino Library](https://github.com/nickgammon/BigNumber) by Nick Gammon
 
 ## Picture
-<img src="./ADF4351.png" height ="500">
+<img src="./ADF4351.jpg" height ="500">
