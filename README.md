@@ -20,5 +20,4 @@ I modidified the code to enable the fast lock functionality and calculate the di
 
 + [ADF4351 Product Page](https://goo.gl/tkMjw6) Analog Devices
 + [SV1AFN ADF4351 Board](https://www.sv1afn.com/adf4351m.html) by Makis Katsouris, SV1AFN
-+ [High Resolution Absolute Encoder ACE128](https://www.tindie.com/products/arielnh56/high-resolution-absolute-encoder-128-positions/) by RedHunter on Tindie
 + [Big Number Arduino Library](https://github.com/nickgammon/BigNumber) by Nick Gammon
