@@ -7,7 +7,7 @@ This porject is designed to incorporate Analog Devices ADF 4351 chip with Teensy
 ### TXCO oscillators
 This PCB is designed such that either 535L250X2GT5 or XNCLH25M000THJA0P0 can be used. If oscillator with frequency other than 25MHz, a corresponding modifcation to the SPI control library has to be made.
 ### Fast Lock Loop Filter Topology
-In order to increase the lock speed, the board is modified according to page 23 in the ADF4351 manual.(a 0 Ohm on R% and replace r4 with a 1k Ohm resistor). The SPI control library in this repository is also adapted to work under the fast lock.
+In order to increase the lock speed, the board is modified according to page 23 in the ADF4351 manual.(a 0 Ohm on R5 and replace R4 with a 1k Ohm resistor). The SPI control library in this repository is also adapted to work under the fast lock.
 
 ### Teensy 3.6
 The Teensy 3.6 is designed to be directly power by the board, so please cut the 5V pad according to https://www.pjrc.com/teensy/external_power.html  before use.
